@@ -1,0 +1,8 @@
+{
+    "categories": {
+        "Images": [ ".jpg", ".jpeg", ".png", ".gif" ],
+        "Documents": [ ".pdf", ".docx", ".txt" ],
+        "Videos": [ ".mp4", ".mov", ".avi" ],
+        "Others": []
+    }
+}

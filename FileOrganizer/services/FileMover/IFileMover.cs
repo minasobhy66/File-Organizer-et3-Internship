@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FileOrganizer.services.FileMover
+{
+    public interface IFileMover
+    { 
+        void MoveFile(string filePath, string targetFolder);
+
+    }
+}
