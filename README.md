@@ -1,54 +1,48 @@
-﻿# File-Organizer-et3-Internship
+# 📂 File Organizer Console App
 
-File Organizer – Challenge Submission
-📌 Option Chosen
-Option 1: File Organizer
+This console application, built in C#, helps you organize files in a specified directory by moving them into subfolders based on their file extensions.
 
-🚀 How to Run the Program
-Clone the repository:
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/<your-username>/<your-repo-name>.git
-Open the project in Visual Studio (or any C# IDE that supports .NET).
+## 🚀 Getting Started
 
-Build the solution to restore dependencies.
+These instructions will get you a copy of the project up and running on your local machine.
 
-Run the program using:
+### Prerequisites
 
-Visual Studio → Press F5
+* [.NET SDK](https://dotnet.microsoft.com/download)
+* A C# IDE like [Visual Studio](https://visualstudio.microsoft.com/vs/) or [VS Code](https://code.visualstudio.com/) with the C# extension.
 
-Or via terminal inside the project directory:
+### How to Run
 
-bash
-Copy
-Edit
-dotnet run
-🛠️ Language and Tools Used
-Language: C#
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+    cd your-repo-name
+    ```
+2.  **Build the solution** to restore the necessary dependencies. You can do this by running `dotnet build` from your terminal or by building the project within your IDE.
+3.  **Run the application with the `dotnet run` command followed by the `organize` command and the path to the directory.**
 
-Framework: .NET
+    * **To organize a folder:**
+        ```CLI
+         organize <filepath>
+        ```
+    * **To simulate the organization (without moving any files):**
+        ```CLI
+         organize <filepath> --simulate
+        ```
 
-IDE: Visual Studio
+---
 
-✨ Extra Features
-Undo All: The program includes an undo feature that reverts all file movements if the user requests it. This ensures no unwanted file changes remain after execution.
+## ✨ Features
 
-📂 Project Structure
-bash
-Copy
-Edit
-FileOrganizer/
-│
-├── Program.cs         # Main program logic
-├── FileOrganizer.cs   # Handles file organizing logic
-├── UndoManager.cs     # Handles undo functionality
-├── README.md          # This file
-└── .gitignore         # Ignored files/folders
-📄 Notes
-This program organizes files into folders based on their extensions.
+* **Organize by Extension:** Automatically creates subfolders (e.g., `Documents`, `Images`, `Videos`) and moves files into them based on their type.
+* **Simulate:** The `--simulate` flag allows you to see what the application will do without making any permanent changes. This is useful for previewing the file organization.
+* **Undo All:** A powerful feature that allows you to revert all file movements made during the current session, ensuring you can easily undo any accidental changes.
 
-The undo feature works for all changes made during the current session.
+---
 
-Tested on Windows with .NET 8.0.
+## 📄 Notes
+
+* The **Undo** feature is limited to actions performed within the same session. Once the application is closed, the changes are permanent.
+* The program has been tested on **Windows** with **.NET 8.0**. Compatibility with other operating systems or .NET versions may vary.
