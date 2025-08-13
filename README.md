@@ -17,20 +17,33 @@ These instructions will get you a copy of the project up and running on your loc
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
-    cd your-repo-name
+    git clone https://github.com/minasobhy66/File-Organizer-et3-Internship.git
+    cd File-Organizer-et3-Internship.git
     ```
 2.  **Build the solution** to restore the necessary dependencies. You can do this by running `dotnet build` from your terminal or by building the project within your IDE.
-3.  **Run the application with the `dotnet run` command followed by the `organize` command and the path to the directory.**
+3.  **Start the application:**
+    * **From Visual Studio:** Press `F5`.
+    * **From the terminal:** Navigate to the project directory and run the command `dotnet run`.
 
-    * **To organize a folder:**
-        ```CLI
-         organize <filepath>
-        ```
-    * **To simulate the organization (without moving any files):**
-        ```CLI
-         organize <filepath> --simulate
-        ```
+The application will then start and wait for your input.
+
+---
+
+## 💻 Usage
+
+Once the application is running, you can use the following commands in the console to organize a directory.
+
+* **To organize a folder (moves files to new subfolders):**
+    ```
+    organize <filepath>
+    ```
+    *Replace `<filepath>` with the full path to the directory you want to organize.*
+
+* **To simulate the organization (previews changes without moving files):**
+    ```
+    organize <filepath> --simulate
+    ```
+    *Use the `--simulate` flag to see what will happen before you commit to the changes.*
 
 ---
 
